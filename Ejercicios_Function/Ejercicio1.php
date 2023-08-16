@@ -29,7 +29,7 @@ if (isset($_POST['cade'])) {
     <h1>Comprobador de Palíndromos</h1>
     <form method="POST">
         <label for="cade">Ingresa una palabra:</label><br>
-        <input type="text" id="cade" name="cade" value="<?php echo $cade; ?>" required><br>
+        <input type="text" name="cade" value="<?php echo $cade; ?>" required><br>
         <button type="submit">Verificar</button>
     </form>
     <p><?php echo $resultado; ?></p>
