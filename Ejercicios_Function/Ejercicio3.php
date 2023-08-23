@@ -25,12 +25,13 @@ function ordenarArray($arr) { //Función ordenarArray, oma un arreglo de número
 if (isset($_POST['numeros'])) {
     // Obtener los números ingresados como una cadena y convertirlos en un arreglo
     $numeros = explode(',', $_POST['numeros']);
-    
+   
     // Convertir los elementos del arreglo en números enteros
     $numeros = array_map('intval', $numeros);
     
     // Ordenar el arreglo utilizando la función ordenarArray
     $numerosOrdenados = ordenarArray($numeros);
+    print_r ($numeros);
 } else {
     $numeros = '';
     $numerosOrdenados = array();
@@ -49,7 +50,7 @@ if (isset($_POST['numeros'])) {
     
     <form method="POST">
         <label for="numeros">Ingresa los números separados por comas:</label>
-        <input type="text" id="numeros" name="numeros" value="<?php echo $numeros or implode(', ', ); ?>" required>
+        <input type="text" id="numeros" name="numeros" value="" required>
         <button type="submit">Ordenar</button>
     </form>
     

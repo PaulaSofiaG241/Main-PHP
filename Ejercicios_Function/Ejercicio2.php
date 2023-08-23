@@ -4,21 +4,22 @@
 //y 1, cada número subsiguiente es la suma de los dos números anteriores ( 0,1,1,2,3,5,8….).
 
 function generarFibonacci($n) {
-    $fibonacci = array(
-        
-    );
-    $a = 0;
-    $b = 1;
-    
-    while ($a <= $n++) {
-        $fibonacci[] = $a;
-        $temp = $a;
-        $a = $b;
-        $b = $temp + $b;
+    $resul1=1;
+    $resul2=0;
+
+    echo $resul2."<br>";
+
+    for($i =0; $i<=$n; $i++){
+        $resul3 = $resul1+$resul2;
+        echo $resul3."<br>";
+        $resul1 =$resul2;
+        $resul2 =$resul3;
+
+
     }
-    
-    return $fibonacci;
+  
 }
+
 
 if (isset($_POST['numero'])) {
     $numeroIngresado = intval($_POST['numero']);
@@ -48,9 +49,9 @@ if (isset($_POST['numero'])) {
     <h2>Secuencia de Fibonacci:</h2>
     <ul>
         <?php
-        foreach ($secuenciaFibonacci as $numero) {
-            echo "<li>$numero</li>";
-        }
+         
+            echo $secuenciaFibonacci;
+        
         ?>
     </ul>
 </body>
