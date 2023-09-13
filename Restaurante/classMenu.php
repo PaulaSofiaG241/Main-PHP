@@ -1,6 +1,6 @@
 <?php
 
-class Menu {
+class Menu extends Item {
     public $arrayItems;
     
 

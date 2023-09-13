@@ -1,4 +1,4 @@
-<?php
+8<?php
 
 class Item{
     private $strNombreItem;
@@ -9,12 +9,12 @@ class Item{
         $this->fltPrecio = $precio;
 
     }
-    public function getNombre() {
+     public function getNombre() {
         return $this->strNombreItem;
     }
 
     public function getPrecio() {
         return $this->fltPrecio;
-    }
+    } 
     
 }

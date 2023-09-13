@@ -18,7 +18,7 @@ class Pedido {
             
             $total += $valor;
         }
-        return "<h1> Factura</h1>"."Su pedido es igual a ".$total." pesos";
+        return "Su pedido es igual a " .$total. " pesos" ;
     }
     
 }

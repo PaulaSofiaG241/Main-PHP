@@ -1,14 +1,14 @@
 <?php
 
 class Cliente{
-    private $strNombreCliente;
+    private $strCliente;
 
-    public function __construct(string $nombre) {
-        $this->strNombreCliente = $nombre;
+    public function __construct(string $cliente) {
+        $this->strCliente = $cliente;
     }
     public function getCliente() {
 
-        return "<h1>"."Hola ".$this->strNombreCliente . " bienvenida a nuestro restaurante"."</h1>";
+        return $this->strCliente; 
     }
     
 }
